@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ba7ac21d5fd51704c9b761613c165984
+timeCreated: 1512494143
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Models/Materials/glasses material.mat
+  uploadId: 616771

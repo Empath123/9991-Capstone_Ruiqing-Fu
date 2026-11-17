@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 75db3551824b3844997f628dec67e106
+timeCreated: 1512497422
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Prefabs/Laptop.prefab
+  uploadId: 616771

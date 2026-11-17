@@ -1976,12 +1976,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TransformFollow
   subject: {fileID: 995970001}
+  defaultSubjectTag: Player
   positionSyncRate: 0.5
   offset: {x: 0, y: 0, z: 0}
-  startRotation: {x: 0, y: 0, z: 0, w: 0}
+  autoSyncPosition: 1
   yRotation: 0
   autoSyncYRotation: 0
   rotationSyncRate: 0.1
+  rotationDeltaThreshold: 15
+  autoSyncRotation: 0
 --- !u!114 &1251394091
 MonoBehaviour:
   m_ObjectHideFlags: 0

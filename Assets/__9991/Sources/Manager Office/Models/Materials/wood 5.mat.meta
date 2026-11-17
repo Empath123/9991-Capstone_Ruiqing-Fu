@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c6559a5dfad182042806ea0509ff961e
+timeCreated: 1512666832
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Models/Materials/wood 5.mat
+  uploadId: 616771

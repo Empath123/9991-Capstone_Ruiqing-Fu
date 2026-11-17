@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ee63dedaf120c0442a5beb0f86a45778
+timeCreated: 1512461080
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Prefabs/Lamp 1.prefab
+  uploadId: 616771

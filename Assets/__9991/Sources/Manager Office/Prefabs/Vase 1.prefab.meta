@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2763fb1f86de12a4f8ad6515e002a3d9
+timeCreated: 1512460819
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Prefabs/Vase 1.prefab
+  uploadId: 616771

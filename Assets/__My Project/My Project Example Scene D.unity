@@ -612,6 +612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimedScale
   startScale: {x: 0.1, y: 0.1, z: 0.1}
   endScale: {x: 2, y: 2, z: 2}
+  resetOnDisable: 1
+  originalScale: {x: 0, y: 0, z: 0}
   myLerpValue: {fileID: 0}
 --- !u!1001 &1388333556
 PrefabInstance:
@@ -1081,6 +1083,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimedScale
   startScale: {x: 0.1, y: 0.1, z: 0.1}
   endScale: {x: 2, y: 2, z: 2}
+  resetOnDisable: 1
+  originalScale: {x: 0, y: 0, z: 0}
   myLerpValue: {fileID: 0}
 --- !u!114 &1586455768
 MonoBehaviour:

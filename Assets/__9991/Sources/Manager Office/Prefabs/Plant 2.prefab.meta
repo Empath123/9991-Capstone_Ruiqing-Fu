@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b1faf475d76a89245b471802b277c829
+timeCreated: 1514020859
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Prefabs/Plant 2.prefab
+  uploadId: 616771

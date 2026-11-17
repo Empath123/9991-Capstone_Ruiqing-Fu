@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b8b7ed9da0188df4ab2b171c4ccb237b
+timeCreated: 1512592670
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Models/Materials/Wall color.mat
+  uploadId: 616771

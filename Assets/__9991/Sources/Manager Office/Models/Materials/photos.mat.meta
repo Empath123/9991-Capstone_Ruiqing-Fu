@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: df7722b9b26e35148bccdb8c1ab5d277
+timeCreated: 1512460308
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Models/Materials/photos.mat
+  uploadId: 616771

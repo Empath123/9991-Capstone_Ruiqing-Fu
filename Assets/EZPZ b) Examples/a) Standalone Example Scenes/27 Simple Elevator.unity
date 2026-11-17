@@ -1171,6 +1171,7 @@ MonoBehaviour:
   autoSyncYRotation: 0
   rotationSyncRate: 0.1
   rotationDeltaThreshold: 15
+  autoSyncRotation: 0
 --- !u!4 &1743992196
 Transform:
   m_ObjectHideFlags: 0

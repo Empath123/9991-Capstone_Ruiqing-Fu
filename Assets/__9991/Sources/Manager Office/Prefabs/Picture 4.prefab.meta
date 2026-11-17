@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f64b4468d12bb504986b3266b9aae70b
+timeCreated: 1512723586
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Prefabs/Picture 4.prefab
+  uploadId: 616771

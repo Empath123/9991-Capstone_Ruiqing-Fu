@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1ee83aba076719845b084442527b8a78
+timeCreated: 1512462906
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Models/Materials/magazine.mat
+  uploadId: 616771

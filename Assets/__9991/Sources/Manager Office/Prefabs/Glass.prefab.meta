@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: abf9d66879900964089cfb332217efb2
+timeCreated: 1512577015
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Prefabs/Glass.prefab
+  uploadId: 616771

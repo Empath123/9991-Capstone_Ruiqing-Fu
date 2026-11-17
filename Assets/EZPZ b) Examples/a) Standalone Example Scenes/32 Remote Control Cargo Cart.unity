@@ -1608,17 +1608,18 @@ MonoBehaviour:
   filterString: Environment
   allowUnfiltered: 0
   excludeMode: 1
+  explicitExclusionList: []
   onTriggerEnter:
     m_PersistentCalls:
       m_Calls: []
+  deleteOnEnter: 0
+  disableOnEnter: 0
   onTriggerExit:
     m_PersistentCalls:
       m_Calls: []
   onTriggerStay:
     m_PersistentCalls:
       m_Calls: []
-  deleteOnEnter: 0
-  disableOnEnter: 0
   subject: {fileID: 0}
   triggerActive: 1
   myRenderer: {fileID: 0}
@@ -1967,17 +1968,18 @@ MonoBehaviour:
   filterString: Environment
   allowUnfiltered: 0
   excludeMode: 1
+  explicitExclusionList: []
   onTriggerEnter:
     m_PersistentCalls:
       m_Calls: []
+  deleteOnEnter: 0
+  disableOnEnter: 0
   onTriggerExit:
     m_PersistentCalls:
       m_Calls: []
   onTriggerStay:
     m_PersistentCalls:
       m_Calls: []
-  deleteOnEnter: 0
-  disableOnEnter: 0
   subject: {fileID: 0}
   triggerActive: 1
   myRenderer: {fileID: 0}

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a0d7b41292b53054493555f5e4ca9bfe
+timeCreated: 1512552755
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Models/Materials/black plastic.mat
+  uploadId: 616771

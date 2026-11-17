@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: fd9a741d5104c7d42bd740e64c03f0a7
+timeCreated: 1512495011
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Models/Materials/table protector.mat
+  uploadId: 616771

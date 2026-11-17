@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3e56b199612fca74c8ea39d28bb6866c
+timeCreated: 1512551224
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 107709
+  packageName: Manager Office Interior
+  packageVersion: 1.2
+  assetPath: Assets/Manager Office/Prefabs/Paper.prefab
+  uploadId: 616771
