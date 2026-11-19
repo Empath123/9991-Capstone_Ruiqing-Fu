@@ -7731,7 +7731,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1935235439763174, guid: bc33494fe9590ed4da832f4f37990bb2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1449626368}
+      addedObject: {fileID: 1449626371}
   m_SourcePrefab: {fileID: 100100000, guid: bc33494fe9590ed4da832f4f37990bb2, type: 3}
 --- !u!1 &1075234975
 GameObject:
@@ -10690,7 +10690,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1935235439763174, guid: bc33494fe9590ed4da832f4f37990bb2, type: 3}
   m_PrefabInstance: {fileID: 1073913562}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1449626368
+--- !u!114 &1449626371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10699,7 +10699,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1449626366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a819177c57565b3409c36ef9cb2bc7ce, type: 3}
+  m_Script: {fileID: 11500000, guid: d6aa6dd423e5f584199dbfc25edbfc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VRPushDoor
   door: {fileID: 2055000932}
@@ -10711,6 +10711,7 @@ MonoBehaviour:
   handleTouchRadius: 0.065
   doorLimit: 95
   reverseOpeningDirection: 0
+  panelPushRadius: 0.035
   editorKeyboard: 1
 --- !u!1001 &1450777069
 PrefabInstance:
