@@ -1,47 +1,85 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
-[DefaultExecutionOrder(200)] // µÈÊó±ê½Å±¾¸üĞÂÍêÎ»ÖÃÔÙ¼ì²â
+[DefaultExecutionOrder(200)] // ç­‰é¼ æ ‡è„šæœ¬æ›´æ–°å®Œä½ç½®å†æ£€æµ‹
 public class OpenMailOnHover : MonoBehaviour
 {
-    public Transform screenOpen;       // ÍÏÈë Screen Open
-    public GameObject openedMail;      // ÍÏÈëÏÔÊ¾ÓÊ¼şÕıÎÄµÄÎïÌå
+    public Transform screenOpen;       // æ‹–å…¥ Screen Open
+    public GameObject openedMail;      // æ‹–å…¥æ˜¾ç¤ºé‚®ä»¶æ­£æ–‡çš„ç‰©ä½“
 
-    private SpriteRenderer notice;
+    [SerializeField] private AudioClip emailNotification;
+    private bool noticeWasVisible;
+    [SerializeField] private SpriteRenderer notice;
+    private const float DelaySeconds = 15f;
+    private float showAt;
     private Transform cursor;
     private bool opened;
 
     void Awake()
     {
-        notice = GetComponent<SpriteRenderer>();
-        if (!screenOpen) screenOpen = transform.parent;
+        if (!notice) notice = GetComponent<SpriteRenderer>();
+        if (!screenOpen) screenOpen = notice && notice.transform == transform ? transform.parent : transform;
+        if (!notice && screenOpen)
+        {
+            Transform icon = screenOpen.Find("Email");
+            if (icon) notice = icon.GetComponent<SpriteRenderer>();
+        }
+        if (!notice)
+        {
+            Debug.LogError("OpenMailOnHover: assign the Email icon SpriteRenderer to Notice.", this);
+            enabled = false;
+        }
+    }
+
+    void OnEnable()
+    {
+        if (!notice) return;
+        showAt = Time.time + DelaySeconds;
+        notice.forceRenderingOff = true;
+    }
+
+    void OnDisable()
+    {
+        if (notice) notice.forceRenderingOff = false;
+        noticeWasVisible = false;
     }
 
     void LateUpdate()
     {
-        if (opened || !screenOpen || !openedMail) return;
+        if (opened) return;
 
-        // ¼æÈİÇ°ÃæµÄ 3 Ãë¶¯»­£ºÍ¨Öª»¹Í¸Ã÷Ê±£¬²»´¥·¢¡£
-        if (!notice.enabled || !notice.sprite || notice.color.a < 0.95f)
+        if (Time.time < showAt) return;
+        notice.forceRenderingOff = false;
+
+        bool visible = notice.gameObject.activeInHierarchy && notice.enabled && notice.sprite != null && notice.color.a > 0f;
+        if (visible && !noticeWasVisible && emailNotification)
+        {
+            // ç‹¬ç«‹å£°æºè®©æç¤ºéŸ³åœ¨å›¾æ ‡è¢«éšè—åä¹Ÿèƒ½æ’­å®Œã€‚
+            AudioSource.PlayClipAtPoint(emailNotification, transform.position);
+        }
+        noticeWasVisible = visible;
+        if (!screenOpen || !openedMail) return;
+
+        // å…¼å®¹å‰é¢çš„ 3 ç§’åŠ¨ç”»ï¼šé€šçŸ¥è¿˜é€æ˜æ—¶ï¼Œä¸è§¦å‘ã€‚
+        if (!visible || notice.color.a < 0.95f)
             return;
 
-        // Ö®Ç°µÄÊó±ê½Å±¾»áÔÚ Screen Open ÏÂ×Ô¶¯Éú³ÉÕâ¸ö¹â±ê¡£
+        // ä¹‹å‰çš„é¼ æ ‡è„šæœ¬ä¼šåœ¨ Screen Open ä¸‹è‡ªåŠ¨ç”Ÿæˆè¿™ä¸ªå…‰æ ‡ã€‚
         if (!cursor)
             cursor = screenOpen.Find("Mouse Cursor (Runtime)");
 
         if (!cursor || !cursor.gameObject.activeInHierarchy) return;
 
-        // °Ñ¼ıÍ·¼â¶Ë»»Ëãµ½Í¨ÖªÍ¼Æ¬×Ô¼ºµÄ×ø±êÖĞ¡£
-        // ¼´Ê¹±Ê¼Ç±¾¸Ç×ÓĞı×ª»òÍ¨ÖªËõ·Å£¬¼ì²âÇøÓòÒ²»á¸ú×Å×ß¡£
-        Vector3 tip = transform.InverseTransformPoint(cursor.position);
+        // æŠŠç®­å¤´å°–ç«¯æ¢ç®—åˆ°é€šçŸ¥å›¾ç‰‡è‡ªå·±çš„åæ ‡ä¸­ã€‚
+        // å³ä½¿ç¬”è®°æœ¬ç›–å­æ—‹è½¬æˆ–é€šçŸ¥ç¼©æ”¾ï¼Œæ£€æµ‹åŒºåŸŸä¹Ÿä¼šè·Ÿç€èµ°ã€‚
+        Vector3 tip = notice.transform.InverseTransformPoint(cursor.position);
 
-        // Ö»¼ì²â Sprite Íø¸ñ¸²¸ÇµÄÇøÓò£¬¶ø²»ÊÇÕû¿éÆÁÄ»¡£
+        // åªæ£€æµ‹ Sprite ç½‘æ ¼è¦†ç›–çš„åŒºåŸŸï¼Œè€Œä¸æ˜¯æ•´å—å±å¹•ã€‚
         if (!notice.localBounds.Contains(new Vector3(
                 tip.x, tip.y, notice.localBounds.center.z)))
             return;
 
         opened = true;
-        openedMail.SetActive(true);   // ÏÔÊ¾ÓÊ¼şÕıÎÄ
-        gameObject.SetActive(false);  // Òş²ØÓÒÏÂ½ÇÍ¨Öª
+        openedMail.SetActive(true);   // æ˜¾ç¤ºé‚®ä»¶æ­£æ–‡
+        notice.gameObject.SetActive(false);  // éšè—å³ä¸‹è§’é€šçŸ¥
     }
 }
