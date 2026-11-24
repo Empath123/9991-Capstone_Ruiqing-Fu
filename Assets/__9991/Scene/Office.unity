@@ -17880,6 +17880,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!20 &1708933459 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 1382324900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1709347008 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 23053283717520548, guid: 9b685ed9a9d784944a18c3bc725e7a17, type: 3}
@@ -21328,6 +21333,25 @@ MonoBehaviour:
   brightness: 0.62
   reducedFlash: 0
   surfaceGap: 0.007
+--- !u!114 &111406555146117774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935236513595452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946ac8bf2fff4ce4f9100f77a49f7802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorWhiteLightTransition
+  doorLeaf: {fileID: 4279142114665102}
+  playerCamera: {fileID: 1708933459}
+  nextScene: 
+  triggerAngle: 18
+  spreadSeconds: 5.8
+  whiteHoldSeconds: 0.7
+  doorwayHaze: 0.78
 --- !u!4 &155807633133435300
 Transform:
   m_ObjectHideFlags: 0
@@ -22110,6 +22134,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2223931967355052046, guid: fbe73cca538d20e4b93ac05a2b0f9e59, type: 3}
       insertIndex: -1
       addedObject: {fileID: 111406555146117773}
+    - targetCorrespondingSourceObject: {fileID: 2223931967355052046, guid: fbe73cca538d20e4b93ac05a2b0f9e59, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 111406555146117774}
   m_SourcePrefab: {fileID: 100100000, guid: fbe73cca538d20e4b93ac05a2b0f9e59, type: 3}
 --- !u!23 &1436731145148612143
 MeshRenderer:
